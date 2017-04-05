@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.myapplication.Activity3">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:gravity="top|center_horizontal"
+        android:textColor="@color/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task3"
+        android:id="@+id/task3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false" />
+
+    <TextView
+        android:textColor="@color/text"
+        android:gravity="top|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quest1"
+        android:id="@+id/quest1"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/task3"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:id="@+id/answ1"
+        android:background="#ffffff"
+        android:layout_below="@+id/quest1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="@color/text"
+        android:gravity="top|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quest2"
+        android:id="@+id/quest2"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/answ1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:id="@+id/answ2"
+        android:background="#ffffff"
+        android:layout_below="@+id/quest2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="@color/text"
+        android:gravity="top|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quest3"
+        android:id="@+id/quest3"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/answ2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:id="@+id/answ3"
+        android:background="#ffffff"
+        android:layout_below="@+id/quest3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gonext2"
+        android:id="@+id/next2"
+        android:layout_below="@+id/answ3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/next2"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:text="@string/check"
+            android:id="@+id/check"
+            android:layout_weight="0.18"
+            android:layout_gravity="right" />
+
+
+        <Button
+            android:layout_width="239dp"
+            android:layout_height="55dp"
+            android:text="@string/helpTooHard"
+            android:id="@+id/help" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
